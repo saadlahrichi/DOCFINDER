@@ -1,15 +1,22 @@
 *{font-family: 'Arimo', sans-serif;
 margin: 0;
-	}
+padding: 0;
+ }
 .top{
 	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)) , url("./DocFinder2.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;
  	background-size: cover;
- 	margin-bottom: 35px;
- 	height: 900px; 
+ 	height: 800px;
  }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    display: inline;}
 
 body{
 	background-color: #f2f2f2;
@@ -22,7 +29,7 @@ h1{
 	font-family: 'Ubuntu', sans-serif;
 	font-size: 65px;
 	color: white;
-	padding-top: 320px;
+	padding-top: 220px;
 }
 
 h1::after{
@@ -82,9 +89,7 @@ p{
 }
 
 .bottom{
-	background-color: #f2f2f2;
-
-	/*background-color: rgba(255, 255, 255, 0.7);*/}
+	background-color: #f2f2f2;}
 
 
 a{
