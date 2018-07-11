@@ -19,11 +19,10 @@ h1{
 	text-transform: uppercase;
 	font-family: 'Ubuntu', sans-serif;
 	font-size: 65px;
-	color: /*#005ce6*/ white;
+	color: white;
 	padding-top: 320px;
-
-
 }
+
 h1::after{
 	content: "";
 	display: block;
@@ -36,13 +35,15 @@ h1::after{
 
 h2{
 	margin-left: 10px;
-	color: #ffff;
+	color: #005ce6;
 	text-decoration: underline;
-	text-shadow: 2px 2px #005ce6;
+	text-shadow: 2px 0px #005ce6;
+	display: inline-block;
+	padding-right: 5px;
 	
 }
 
-h3::after{
+p::after{
 	content: "";
 	display: block;
 	margin-top: 50px;
@@ -65,17 +66,17 @@ p{
 	color: black;
 	margin: 35px
 }
-.topbutton{
+/*.topbutton{ button style
 	margin-left: 50px;
 	font-size: 18px;
 	
-}
+}*/
 .Accueil{
 	font-size: 18px;
 	color: black;
 }
 
 .bottom{
-	background-color: rgba(255, 255, 255, 0.7);
+	background-color: rgba(255, 255, 255, 0.7);	
 }
 
