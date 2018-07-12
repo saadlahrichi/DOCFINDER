@@ -23,32 +23,31 @@
 <div class="list">
 
 <button class="collapsible">Docteur Mekouar Rochdi Azouagh</button>
-<div class="content" style="display: -webkit-box">
+<div class="content" style="display: none; transition: all, 1s;">
   <ul class="important">
         <li>Spécialité: Pédiatre</li>
         <li>Statut: Disponible</li>
-        <li>Nombre de patients en salle d'attente: 12</li>
-        <li>Temps d'attente estimé: </li>
+        <li>Nombre de patients en salle d'attente: 10</li>
+        <li>Temps d'attente estimé: 250min (4h10)</li>
         <li>Adresse:8 Rue Naceiria Quartier Ancienne Médina </li>
         <li>Téléphone:0522298944</li>
     </ul>
     <div id="googleMap" style="width:50%;height:400px;"></div>
-
 </div>
 <button class="collapsible">Docteur Jamel Kada Zair</button>
-<div class="content">
+<div class="content" style="display: none; transition: all, 1s;">
   <ul class="important">
             <li>Spécialité:Pédiatre</li>
             <li>Statut:Occupé</li>
-            <li>Nombre de patients en salle d'attente:12</li>
+            <li>Nombre de patients en salle d'attente: 12</li>
             <li>Temps d'attente estimé:300min (5h)</li>
             <li>Adresse:8 Boulevard Yacoub El mansour Quartier Maarif Extension </li>
             <li>Téléphone:0522258260</li>
-          </ul>
-          <div id="googleMap2" style="width:50%;height:400px;"></div>
+      </ul> 
+      <div id="googleMap2" style="width:50%;height:400px;"></div>
 </div>
 <button class="collapsible">Docteur Hanane Benkhadra Benabderrazik</button>
-<div class="content">
+<div class="content" style="display: none;">
   <ul class="important">
             <li>Spécialité:Pédiatre</li>
             <li>Statut:Disponible</li>
@@ -60,7 +59,7 @@
     <div id="googleMap3" style="width:50%;height:400px;"></div>
 </div>
 <button class="collapsible">Docteur Meziane Elotmani Boualam</button>
-<div class="content">
+<div class="content" style="display: none;">
   <ul class="important">
             <li>Spécialité:Ophtalmologue</li>
             <li>Statut:Occupé</li>
@@ -72,19 +71,19 @@
           <div id="googleMap4" style="width:50%;height:400px;"></div>
 </div>
 <button class="collapsible">Docteur Yasser Bensalah</button>
-<div class="content">
+<div class="content" style="display: none;">
   <ul class="important">
             <li>Spécialité:Ophtalmologue</li>
             <li>Statut:Occupé</li>
             <li>Nombre de patients en salle d'attente:12</li>
-            <li>Temps d'attente estimé:300min (5h)</li>
+            <li>Temps d'attente estimé:240min (4h)</li>
             <li>Adresse:22, Bd Yacoub El Mansour, 1°ét. Bur. n°12, Q. Maarif </li>
             <li>Téléphone:05 22 23 42 92</li>
     </ul>
     <div id="googleMap5" style="width:50%;height:400px;"></div>
 </div>
 <button class="collapsible">Docteur Zineb Lazrak</button>
-<div class="content">
+<div class="content" style="display: none;">
   <ul class="important">
             <li>Spécialité:Ophtalmologue</li>
             <li>Statut:Disponible</li>
@@ -96,20 +95,19 @@
     <div id="googleMap6" style="width:50%;height:400px;"></div>
 </div>
 <button class="collapsible">Docteur Ghizlane Abidi</button>
-<div class="content">
-  
+ <div class="content" style="display: none;">
   <ul >
             <li>Spécialité:Cardiologue</li>
             <li>Statut:Occupé</li>
             <li>Nombre de patients en salle d'attente:16</li>
-            <li>Temps d'attente estimé:supérieur à 4h</li>
+            <li>Temps d'attente estimé:400min (6h40min)</li>
             <li>Adresse: 89, Avenue Stendhal, Appt. n°1, Val fleuri, Q. Maarif, 20390 </li>
             <li>Téléphone:05 22 25 45 34</li>
     </ul>
     <div id="googleMap7" style="width:50%;height:400px;"></div>
 </div>
 <button class="collapsible">Docteur Driss Benchakroune</button>
-<div class="content">
+<div class="content" style="display: none;">
   <ul>
             <li>Spécialité:Cardiologue</li>
             <li>Statut:Disponible</li>
@@ -121,7 +119,7 @@
     <div id="googleMap8" style="width:50%;height:400px;"></div>
 </div>
 <button class="collapsible" >Docteur Mohamed Allaoui</button>
-<div class="content">
+<div class="content" style="display: none;">
   <ul>
               <li>Spécialité:Cardiologue</li>
               <li>Statut:Disponible </li>
@@ -133,11 +131,13 @@ Anfa Casablanca</li>
     </ul>
     <div id="googleMap9" style="width:50%;height:400px;"></div>
 </div>
+  
 </div>
 </div>
 
 
 <script>
+
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
@@ -147,8 +147,10 @@ for (i = 0; i < coll.length; i++) {
         var content = this.nextElementSibling;
         if (content.style.display === "-webkit-box") {
             content.style.display = "none";
+            
         } else {
             content.style.display = "-webkit-box";
+           
         }
     });
 }
@@ -169,6 +171,7 @@ var Zair = { lat: 33.578726, lng: -7.636860}
       zoom:20,
   };
 var map=new google.maps.Map(document.getElementById("googleMap2"),mapZair);
+
 var Benkhadra = { lat: 33.568999, lng: -7.626359}
 
   var mapBenkhadra= {
@@ -177,11 +180,43 @@ var Benkhadra = { lat: 33.568999, lng: -7.626359}
   };
 var map=new google.maps.Map(document.getElementById("googleMap3"),mapBenkhadra);
 
-}
+  }
+
+var Boualam = { lat: 33.604129, lng: -7.645577}
+
+  var mapBoualam= {
+      center: Boualam,
+      zoom:20,
+  };
+var map=new google.maps.Map(document.getElementById("googleMap4"),mapBoualam);
+
+var Bensalah = { lat: 33.602229, lng: -7.620911}
+
+  var mapBensalah= {
+      center: Bensalah,
+      zoom:20,
+  };
+var map=new google.maps.Map(document.getElementById("googleMap5"),mapBensalah);
+
+var Bensalah = { lat: 33.602229, lng: -7.620911}
+
+  var mapBnsalah= {
+      center: Bensalah,
+      zoom:20,
+  };
+var map=new google.maps.Map(document.getElementById("googleMap6"),mapBensalah);
+
+var Lazrak = { lat: 33.597200, lng: -7.631113}
+
+  var mapLazrak= {
+      center: mapLazrak,
+      zoom:20,
+  };
+var map=new google.maps.Map(document.getElementById("googleMap7"),mapLazrak);
+
 </script>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfNd8aUlG-m-qwKJDNQtTod_vjabjsPyw&callback=myMap"></script>
-
 
 </body>
 </html>
