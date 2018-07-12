@@ -6,14 +6,17 @@
 </head>
 <body>
 <nav>
-      <ul>
-      <li><a class="actived" href="./MainPage.html">Page d'accueil</a></li>
+      <ul class="navbar">
+      <li><a href="./MainPage.html">Page d'accueil</a></li>
       <li><a href="./Casablanca.html">Casablanca</a></li>
-      <li><a href="./Rabat.html">Rabat</a></li>
+      <li><a class="actived" href="./Rabat.html">Rabat</a></li>
       <li><a href="./Marrakech.html">Marrakech</a></li>
       <li style="float:right;"><a href="#">FindMyDoc</a></li>
       </ul> 
     </nav>
+    <div class="image">
+    <img width=100%" height="500px"  src="Rabat.jpg">
+    </div>
 <div class="title"> 
 <h1>Docteurs à Rabat:</h1>
 <div class="list">
@@ -48,6 +51,12 @@ for (i = 0; i < coll.length; i++) {
         }
     });
 }
+function myMap() {
+  var Rabat = { lat: 33.9716, lng: -6.8498}
+var mapProp= {
+    center: Rabat,
+    zoom:20,
+};
 </script>
 
 </body>
