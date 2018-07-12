@@ -4,7 +4,8 @@ padding: 0;
 font-family: 'Arimo', sans-serif;
  }
  body{
-    background-color: #f2f2f2;
+   background-color: #f2f2f2;
+
 }
 
 .title{
@@ -25,6 +26,7 @@ font-family: 'Arimo', sans-serif;
     text-align: left;
     outline: none;
     font-size: 14px;
+    margin: 18px;
 }
 
 .active, .collapsible:hover {
@@ -48,13 +50,16 @@ font-family: 'Arimo', sans-serif;
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 40;
    
 }
 .important{
     display: block;
     width: 50%;
     margin-right: 20px;
-    
+    margin-left: 36px;
+    font-size: 28px;
+    line-height: 45px;
 }
 
 
@@ -84,3 +89,6 @@ font-family: 'Arimo', sans-serif;
     background-color: #3881f7;
 }
 
+#logo{
+    height: 50px;
+}
