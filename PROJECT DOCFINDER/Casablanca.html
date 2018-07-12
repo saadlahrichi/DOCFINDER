@@ -1,0 +1,85 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="Casablanca.css">
+<link rel="icon" href="./doc.ico">
+</head>
+<body>
+<nav>
+      <ul>
+      <li><a class="actived" href="./MainPage.html">Page d'accueil</a></li>
+      <li><a href="./Casablanca.html">Casablanca</a></li>
+      <li><a href="./Rabat.html">Rabat</a></li>
+      <li><a href="./Marrakech.html">Marrakech</a></li>
+      <li style="float:right;"><a href="#">FindMyDoc</a></li>
+      </ul> 
+    </nav>
+<div class="title"> 
+<h1>Docteurs à Casablanca:</h1>
+<div class="list">
+<button class="collapsible">Docteur Mekouar Rochdi Azouagh</button>
+<div class="content">
+  <ul class="toz">
+              <li>Spécialité: Pédiatre</li>
+              <li>Statut: Disponible</li>
+              <li>Nombre de patients en salle d'attente: 12</li>
+              <li>Temps d'attente estimé: </li>
+              <li>Adresse:8 Rue Naceiria Quartier Ancienne Médina </li>
+              <li>Téléphone:0522298944</li>
+            </ul>
+</div>
+<button class="collapsible">Docteur Jamel Kada Zair</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button class="collapsible">Docteur Hanane Benkhadra Benabderrazik</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button class="collapsible">Docteur Meziane Elotmani Boualam</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button class="collapsible">Docteur Yasser Bensalah</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button class="collapsible">Docteur Zineb Lazrak</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button class="collapsible">Docteur Ghizlane Abidi</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button class="collapsible">Docteur Driss Benchakroune</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button class="collapsible">Docteur Mohamed Allaoui</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+</div>
+</div>
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    });
+}
+</script>
+
+</body>
+</html>
