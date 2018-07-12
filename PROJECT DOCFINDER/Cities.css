@@ -73,9 +73,13 @@ padding: 0;
 
 .navbar li a:hover:not(.actived){
     background-color: #cccccc;
+    text-decoration: none;
 }
 
 .actived{
     background-color: #3881f7;
 }
 
+img{
+    position: center;
+}
